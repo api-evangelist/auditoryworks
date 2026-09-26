@@ -1,23 +1,51 @@
 aid: auditoryworks
+
 name: Auditoryworks
-description: 'Auditoryworks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Auditoryworks is a technology company focused on developing advanced auditory processing solutions for immersive audio experiences. It provides APIs that enable developers to integrate high-fidelity sound analysis, spatial audio rendering, and real-time acoustic monitoring into applications across gaming, virtual reality, and professional audio production. The company aims to push the boundaries of how machines perceive and manipulate sound, offering robust documentation and developer support for seamless integration.'
+
 url: https://raw.githubusercontent.com/api-evangelist/auditoryworks/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- Audio
+- API
+- DeveloperTools
+- ImmersiveTech
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/auditoryworks-hosts.yml
+- type: Vendors
+  url: vendors/auditoryworks-vendors.yml
+- type: DomainSecurity
+  url: security/auditoryworks-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/auditoryworks
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
